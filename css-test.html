@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-test</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css-test.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <header__logo>COACHTECH</header__logo>
+        </h1>
+        <!-- divタグの多用はSEO(検索エンジン最適化)に良いとは言えない影響が出るらしい。 -->
+        <!-- divタグを多用した場合の可読性に関してはクラス命名を怠らなければ問題にならない気がする。 -->
+        <nav class="header__navi">
+            <ul class="header__navi--item-list">
+                <li class="header__navi--item"><a href="#">ホーム</a></li>
+                <li class="header__navi--item"><a href="#">事業内容</a></li>
+                <li class="header__navi--item"><a href="#">採用情報</a></li>
+                <li class="header__navi--item"><a href="#">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="first-view">
+            <img src="./img/firstview.jpeg" alt="" class="first-view__img">
+            <div class="first-view__textbox">
+                <h2 class="first-view__textbox--text">毎日を笑顔に</h2>
+                <!-- 青帯 -->
+                <div class="first-view__textbox--box"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
