@@ -24,7 +24,7 @@ h1 {
 .header__navi--item a{
     text-decoration: none;
     color: #00277e;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin-right: 30px;
 }
@@ -32,27 +32,28 @@ h1 {
 /* ▲header */
 /* ▼main */
 
+.first-view {
+    position: relative;
+}
+
 .first-view__img {
     width: 50%;
     margin: 100px 0 0 auto;
     display: block;
 }
 
-.first-view__textbox {
-    position: relative;
-    top: -200px;
-}
-
 /* ブロック要素に対してvh,vw等使用してもテキストには適用されない。 */
-.first-view__textbox--text {
-    font-size: 6vw;
+.first-view__text {
+    position: absolute;
+    bottom: 100px;
+    font-size: 70px;
     font-weight: 500;
     margin: 0;
-    line-height: 100px;
 }
 
-.first-view__textbox--box {
-    position: relative;
+.first-view__box {
+    position: absolute;
+    bottom: -100px;
     height: 200px;
     width: 75%;
     background: #00277e;
